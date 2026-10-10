@@ -1,0 +1,76 @@
+{
+  "accuracy": 0.8923076923076924,
+  "precision_macro": 0.8913433018664796,
+  "precision_weighted": 0.8964643104564057,
+  "recall_macro": 0.8580472411590508,
+  "recall_weighted": 0.8923076923076924,
+  "f1_macro": 0.8720987073850753,
+  "f1_weighted": 0.8924161052880519,
+  "roc_auc_macro": 0.9886735369117698,
+  "roc_auc_weighted": 0.9893606290217595,
+  "per_class": [
+    {
+      "class_id": 0,
+      "class": "Normal",
+      "precision": 0.9720670391061452,
+      "recall": 0.9942857142857143,
+      "f1_score": 0.9830508474576272,
+      "support": 525,
+      "roc_auc": 0.9991594470046083
+    },
+    {
+      "class_id": 1,
+      "class": "Arrhythmia",
+      "precision": 0.8690476190476191,
+      "recall": 0.906832298136646,
+      "f1_score": 0.8875379939209727,
+      "support": 161,
+      "roc_auc": 0.992867231253306
+    },
+    {
+      "class_id": 2,
+      "class": "Cardiovascular Disease",
+      "precision": 0.6991150442477876,
+      "recall": 0.8144329896907216,
+      "f1_score": 0.7523809523809524,
+      "support": 194,
+      "roc_auc": 0.9638662590182883
+    },
+    {
+      "class_id": 3,
+      "class": "Coronary Artery Disease",
+      "precision": 0.8278145695364238,
+      "recall": 0.7102272727272727,
+      "f1_score": 0.764525993883792,
+      "support": 176,
+      "roc_auc": 0.9758320527337431
+    },
+    {
+      "class_id": 4,
+      "class": "Congenital Heart Disease",
+      "precision": 0.9310344827586207,
+      "recall": 0.84375,
+      "f1_score": 0.8852459016393442,
+      "support": 64,
+      "roc_auc": 0.9962960153721683
+    },
+    {
+      "class_id": 5,
+      "class": "Cardiomyopathy",
+      "precision": 0.9540229885057471,
+      "recall": 0.8137254901960784,
+      "f1_score": 0.8783068783068783,
+      "support": 102,
+      "roc_auc": 0.9928721071066156
+    },
+    {
+      "class_id": 6,
+      "class": "Heart Infections",
+      "precision": 0.9863013698630136,
+      "recall": 0.9230769230769231,
+      "f1_score": 0.9536423841059603,
+      "support": 78,
+      "roc_auc": 0.999821645893659
+    }
+  ]
+}

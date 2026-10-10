@@ -1,0 +1,1 @@
+"""FastAPI backend package for the heart disease prediction project."""

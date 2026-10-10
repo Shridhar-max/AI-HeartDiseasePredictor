@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="720" viewBox="0 0 960 720" fill="none">
+  <defs>
+    <linearGradient id="surface" x1="142" y1="60" x2="811" y2="673" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FBF3E9"/>
+      <stop offset="1" stop-color="#EEDFD0"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="478" y1="161" x2="478" y2="570" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFDFC"/>
+      <stop offset="1" stop-color="#E5EEE8"/>
+    </linearGradient>
+    <linearGradient id="heart" x1="368" y1="292" x2="595" y2="494" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D87575"/>
+      <stop offset="1" stop-color="#8E2F3B"/>
+    </linearGradient>
+    <filter id="shadow" x="271" y="120" width="414" height="508" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="18" flood-color="#5E4035" flood-opacity=".12" stdDeviation="18"/>
+    </filter>
+  </defs>
+  <rect width="960" height="720" rx="42" fill="url(#surface)"/>
+  <circle cx="480" cy="362" r="263" stroke="#8E2F3B" stroke-opacity=".09" stroke-width="2"/>
+  <circle cx="480" cy="362" r="219" stroke="#8E2F3B" stroke-opacity=".1" stroke-dasharray="4 14" stroke-width="2"/>
+  <g filter="url(#shadow)">
+    <path d="M480 168L632 226V357C632 453 572 534 480 574C388 534 328 453 328 357V226L480 168Z" fill="url(#shield)" stroke="#C9D9CE" stroke-width="5"/>
+    <path d="M480 466C459 449 362 376 362 311C362 272 388 248 424 248C449 248 469 263 480 280C491 263 511 248 536 248C572 248 598 272 598 311C598 376 501 449 480 466Z" fill="url(#heart)"/>
+    <path d="M374 353H431L449 328L472 385L496 308L522 358H586" stroke="#FFF9F1" stroke-linecap="round" stroke-linejoin="round" stroke-width="9"/>
+  </g>
+  <circle cx="226" cy="286" r="7" fill="#B77469" fill-opacity=".54"/>
+  <circle cx="716" cy="432" r="10" fill="#6C9582" fill-opacity=".54"/>
+  <circle cx="697" cy="242" r="5" fill="#B77469" fill-opacity=".54"/>
+  <path d="M220 462C234 448 248 448 262 462M698 528C712 514 726 514 740 528" stroke="#8E2F3B" stroke-linecap="round" stroke-opacity=".27" stroke-width="4"/>
+</svg>

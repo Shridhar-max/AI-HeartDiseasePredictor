@@ -1,0 +1,386 @@
+{
+  "dataset_name": "heart_disease_dataset_13k.csv",
+  "dataset_size": 13000,
+  "input_feature_count": 23,
+  "feature_names": [
+    "Age",
+    "Gender",
+    "BMI",
+    "Resting_BP",
+    "Serum_Cholesterol",
+    "Fasting_Blood_Sugar",
+    "Max_Heart_Rate",
+    "ST_Depression_Oldpeak",
+    "Ejection_Fraction",
+    "Troponin_Level",
+    "BNP_Level",
+    "CRP_Level",
+    "WBC_Count",
+    "HRV_SDNN",
+    "Resting_Respiratory_Rate",
+    "SpO2",
+    "Triglycerides",
+    "LDL_Cholesterol",
+    "HDL_Cholesterol",
+    "Cigarettes_Per_Day",
+    "Family_History",
+    "Diabetes_Status",
+    "Alcohol_ml_Per_Day"
+  ],
+  "model_name": "1D Convolutional Neural Network",
+  "training_date": "2026-09-28T18:01:13.912078+00:00",
+  "test_accuracy": 0.8923076923076924,
+  "validation_accuracy": 0.9069230769230769,
+  "test_loss": 0.29923245310783386,
+  "precision_macro": 0.8913433018664796,
+  "recall_macro": 0.8580472411590508,
+  "f1_macro": 0.8720987073850753,
+  "precision_weighted": 0.8964643104564057,
+  "recall_weighted": 0.8923076923076924,
+  "f1_weighted": 0.8924161052880519,
+  "classification_report": {
+    "0": {
+      "precision": 0.9720670391061452,
+      "recall": 0.9942857142857143,
+      "f1-score": 0.9830508474576272,
+      "support": 525.0
+    },
+    "1": {
+      "precision": 0.8690476190476191,
+      "recall": 0.906832298136646,
+      "f1-score": 0.8875379939209727,
+      "support": 161.0
+    },
+    "2": {
+      "precision": 0.6991150442477876,
+      "recall": 0.8144329896907216,
+      "f1-score": 0.7523809523809524,
+      "support": 194.0
+    },
+    "3": {
+      "precision": 0.8278145695364238,
+      "recall": 0.7102272727272727,
+      "f1-score": 0.764525993883792,
+      "support": 176.0
+    },
+    "4": {
+      "precision": 0.9310344827586207,
+      "recall": 0.84375,
+      "f1-score": 0.8852459016393442,
+      "support": 64.0
+    },
+    "5": {
+      "precision": 0.9540229885057471,
+      "recall": 0.8137254901960784,
+      "f1-score": 0.8783068783068783,
+      "support": 102.0
+    },
+    "6": {
+      "precision": 0.9863013698630136,
+      "recall": 0.9230769230769231,
+      "f1-score": 0.9536423841059603,
+      "support": 78.0
+    },
+    "accuracy": 0.8923076923076924,
+    "macro avg": {
+      "precision": 0.8913433018664796,
+      "recall": 0.8580472411590508,
+      "f1-score": 0.8720987073850753,
+      "support": 1300.0
+    },
+    "weighted avg": {
+      "precision": 0.8964643104564057,
+      "recall": 0.8923076923076924,
+      "f1-score": 0.8924161052880519,
+      "support": 1300.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      522,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0
+    ],
+    [
+      3,
+      146,
+      12,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      11,
+      158,
+      24,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      48,
+      125,
+      0,
+      2,
+      1
+    ],
+    [
+      10,
+      0,
+      0,
+      0,
+      54,
+      0,
+      0
+    ],
+    [
+      1,
+      9,
+      8,
+      1,
+      0,
+      83,
+      0
+    ],
+    [
+      1,
+      2,
+      0,
+      1,
+      1,
+      1,
+      72
+    ]
+  ],
+  "class_labels": {
+    "0": "Normal",
+    "1": "Arrhythmia",
+    "2": "Cardiovascular Disease",
+    "3": "Coronary Artery Disease",
+    "4": "Congenital Heart Disease",
+    "5": "Cardiomyopathy",
+    "6": "Heart Infections"
+  },
+  "class_distribution": [
+    {
+      "class_id": 0,
+      "label": "Normal",
+      "count": 525,
+      "test_count": 537,
+      "percentage": 40.38461538461539
+    },
+    {
+      "class_id": 1,
+      "label": "Arrhythmia",
+      "count": 161,
+      "test_count": 168,
+      "percentage": 12.384615384615385
+    },
+    {
+      "class_id": 2,
+      "label": "Cardiovascular Disease",
+      "count": 194,
+      "test_count": 226,
+      "percentage": 14.923076923076922
+    },
+    {
+      "class_id": 3,
+      "label": "Coronary Artery Disease",
+      "count": 176,
+      "test_count": 151,
+      "percentage": 13.538461538461538
+    },
+    {
+      "class_id": 4,
+      "label": "Congenital Heart Disease",
+      "count": 64,
+      "test_count": 58,
+      "percentage": 4.923076923076923
+    },
+    {
+      "class_id": 5,
+      "label": "Cardiomyopathy",
+      "count": 102,
+      "test_count": 87,
+      "percentage": 7.846153846153846
+    },
+    {
+      "class_id": 6,
+      "label": "Heart Infections",
+      "count": 78,
+      "test_count": 73,
+      "percentage": 6.0
+    }
+  ],
+  "feature_importance": [
+    {
+      "feature": "BNP_Level",
+      "importance": 0.6273424355109221
+    },
+    {
+      "feature": "Troponin_Level",
+      "importance": 0.6191142052014722
+    },
+    {
+      "feature": "Ejection_Fraction",
+      "importance": 0.5200506092057466
+    },
+    {
+      "feature": "CRP_Level",
+      "importance": 0.48145718203455345
+    },
+    {
+      "feature": "ST_Depression_Oldpeak",
+      "importance": 0.4589904909750633
+    },
+    {
+      "feature": "HRV_SDNN",
+      "importance": 0.4170895763428537
+    },
+    {
+      "feature": "SpO2",
+      "importance": 0.3933677164460798
+    },
+    {
+      "feature": "Triglycerides",
+      "importance": 0.34186697052727766
+    },
+    {
+      "feature": "Resting_BP",
+      "importance": 0.33175680483615055
+    },
+    {
+      "feature": "Cigarettes_Per_Day",
+      "importance": 0.32218595041280684
+    },
+    {
+      "feature": "Serum_Cholesterol",
+      "importance": 0.3183392621920609
+    },
+    {
+      "feature": "LDL_Cholesterol",
+      "importance": 0.28907291974790894
+    },
+    {
+      "feature": "Max_Heart_Rate",
+      "importance": 0.26938200406295243
+    },
+    {
+      "feature": "Age",
+      "importance": 0.26400602106595494
+    },
+    {
+      "feature": "Fasting_Blood_Sugar",
+      "importance": 0.25610269068643543
+    },
+    {
+      "feature": "Resting_Respiratory_Rate",
+      "importance": 0.2542610278078943
+    },
+    {
+      "feature": "BMI",
+      "importance": 0.24056034838748186
+    },
+    {
+      "feature": "WBC_Count",
+      "importance": 0.22461029282284084
+    },
+    {
+      "feature": "Alcohol_ml_Per_Day",
+      "importance": 0.2196259046020117
+    },
+    {
+      "feature": "HDL_Cholesterol",
+      "importance": 0.17009024598304956
+    },
+    {
+      "feature": "Diabetes_Status",
+      "importance": 0.07183241579880029
+    },
+    {
+      "feature": "Family_History",
+      "importance": 0.04893046664081252
+    },
+    {
+      "feature": "Gender",
+      "importance": 0.0015275282149999764
+    }
+  ],
+  "training_epochs": 177,
+  "best_validation_epoch": 137,
+  "final_training_accuracy": 0.9115384817123413,
+  "final_training_loss": 0.2422408163547516,
+  "best_validation_loss": 0.2646986246109009,
+  "preprocessing_method": "Training-only median/mode imputation; standard scaling of numeric inputs",
+  "feature_selection_method": "None; training-set mutual information reported for analysis only",
+  "train_size": 10400,
+  "validation_size": 1300,
+  "test_size": 1300,
+  "training_metadata": {
+    "training_date": "2026-09-28T18:01:13.921038+00:00",
+    "epochs": 177,
+    "best_validation_epoch": 137,
+    "final_training_accuracy": 0.9115384817123413,
+    "final_training_loss": 0.2422408163547516,
+    "best_validation_loss": 0.2646986246109009,
+    "preprocessing_method": "Training-only median/mode imputation; standard scaling of numeric inputs",
+    "feature_selection_method": "None; training-set mutual information reported for analysis only",
+    "train_size": 10400,
+    "validation_size": 1300,
+    "test_size": 1300
+  },
+  "num_classes": 7,
+  "class_balance_experiments": [
+    {
+      "experiment": "A",
+      "training_mode": "normal",
+      "epochs_ran": 177,
+      "best_epoch_by_val_loss": 137,
+      "validation_accuracy": 0.9069230769230769,
+      "validation_macro_precision": 0.9034066853981055,
+      "validation_macro_recall": 0.8867001915225577,
+      "validation_macro_f1": 0.8932677849675615,
+      "validation_weighted_f1": 0.9069364356150872,
+      "validation_loss": 0.2646986246109009
+    },
+    {
+      "experiment": "B",
+      "training_mode": "class_weighted",
+      "epochs_ran": 94,
+      "best_epoch_by_val_loss": 54,
+      "validation_accuracy": 0.8907692307692308,
+      "validation_macro_precision": 0.8845236429089921,
+      "validation_macro_recall": 0.8718537274726995,
+      "validation_macro_f1": 0.8737833010401472,
+      "validation_weighted_f1": 0.8896179931496055,
+      "validation_loss": 0.28490686416625977
+    }
+  ],
+  "selected_experiment": "A",
+  "training_class_distribution": {
+    "0": 4201,
+    "1": 1291,
+    "2": 1546,
+    "3": 1412,
+    "4": 514,
+    "5": 818,
+    "6": 618
+  },
+  "training_class_weights": {
+    "0": 0.353657292481382,
+    "1": 1.1508243886245435,
+    "2": 0.9610053594529662,
+    "3": 1.0522055847834884,
+    "4": 2.8904947192884936,
+    "5": 1.8162766329025497,
+    "6": 2.4040684234858993
+  }
+}

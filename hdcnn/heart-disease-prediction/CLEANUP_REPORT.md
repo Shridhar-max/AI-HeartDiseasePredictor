@@ -1,0 +1,106 @@
+# CLEANUP REPORT
+
+## KEPT FILES
+- backend/main.py
+- backend/history.py
+- backend/prediction_history.sqlite3
+- backend/__init__.py
+- backend/requirements.txt
+- data/heart_disease_dataset_13k.csv
+- ml/predict.py
+- ml/preprocessing.py
+- ml/evaluate.py
+- ml/models/cnn_model.keras
+- ml/models/preprocessor.joblib
+- ml/models/class_mapping.json
+- ml/models/mi_selector.joblib
+- ml/models/pca_transformer.joblib
+- ml/models/selected_features.csv
+- ml/outputs/model_analysis.json
+- ml/outputs/mutual_information_scores.csv
+- ml/outputs/correlation_matrix.csv
+- ml/outputs/per_class_metrics.csv
+- frontend/package.json
+- frontend/package-lock.json
+- frontend/next.config.ts
+- frontend/tsconfig.json
+- frontend/app/** (active routes)
+- frontend/components/** (components actually imported by the app)
+- frontend/lib/** (files actually imported by the app)
+- frontend/public/images/anatomical-heart.png
+- frontend/public/model-assets/** (images actually referenced by the model analysis pages)
+
+## SAFE TO DELETE
+- .pytest_cache/
+- frontend/.next/
+- frontend/tsconfig.tsbuildinfo
+- ml/__pycache__/
+- ml/notebooks/ (empty)
+- ml/models/cnn_experiments/
+- ml/models/best_validation_cnn.keras
+- ml/models/experiment_a_best_validation.keras
+- ml/models/experiment_b_best_validation.keras
+- ml/models/tuned_model.joblib
+- ml/models/model_config.json
+- ml/models/pca_components.csv
+- ml/models/selected_features.json
+- data/heart_disease_dataset_25k.csv
+- backend/test_api.py
+- frontend/public/next.svg
+- frontend/public/vercel.svg
+- frontend/public/window.svg
+- frontend/public/globe.svg
+- frontend/public/file.svg
+- ml/cnn_model.py
+- ml/data_inspection.py
+- ml/data_quality_audit.py
+- ml/diagnose_data_features.py
+- ml/experiment_cnn.py
+- ml/feature_extraction.py
+- ml/feature_selection.py
+- ml/generate_correlation_matrix.py
+- ml/generate_feature_association_matrix.py
+- ml/train.py
+- ml/train_robust.py
+- ml/train_tuned.py
+- ml/outputs/cnn_experiments/
+- ml/outputs/feature_diagnostic/
+- ml/outputs/final_model/
+- ml/outputs/robust_training/
+- ml/outputs/experimental or stale chart images not used by the live app
+- ml/outputs/training_history_experiment_a.csv
+- ml/outputs/training_history_experiment_b.csv
+- ml/outputs/experiment_results.csv
+- ml/outputs/class_balance_experiments.csv
+- ml/outputs/validation_accuracy.png
+- ml/outputs/validation_loss.png
+- ml/outputs/cnn_final_classification_report.csv
+- ml/outputs/cnn_final_confusion_matrix.csv
+- ml/outputs/cnn_final_metrics.json
+- ml/outputs/cnn_final_per_class_metrics.csv
+- ml/outputs/confusion_matrix.csv
+- ml/outputs/confusion_matrix.png
+- ml/outputs/feature_association_matrix.csv
+- ml/outputs/feature_association_matrix.png
+- ml/outputs/feature_association_metadata.csv
+- ml/outputs/feature_importance_analysis.csv
+- ml/outputs/numerical_feature_correlation_matrix.csv
+- ml/outputs/numerical_feature_correlation_matrix.png
+- ml/outputs/pca_cumulative_variance.png
+- ml/outputs/pca_explained_variance.csv
+- ml/outputs/pca_scree_plot.png
+- ml/outputs/per_class_performance.png
+- ml/outputs/selected_mi_features.png
+- ml/outputs/training_accuracy.png
+- ml/outputs/training_loss.png
+- ml/outputs/test_predictions.csv
+- ml/outputs/split_indices.json
+- ml/outputs/data_quality_audit.json
+
+## REASON FOR DELETION
+- Generated build caches and Python caches are not runtime sources.
+- Duplicate model artifacts are older training candidates and not loaded by predict.py or API routes.
+- Old experiment scripts and outputs were created during model development and are not referenced by the application.
+- Default starter Frontend assets are not used by the actual app.
+- The current app relies on only one dataset and a single frozen model stack; extra datasets and duplicate models are not required.
+- The live app reads only a small subset of model-analysis artifacts; other generated outputs are stale or redundant.
